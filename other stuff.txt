@@ -1,0 +1,30 @@
+<!-- discord -->
+<h2>Discord</h2>
+<p>Join the discord Below</p>
+
+<div class="w3-display-container w3-animate-opacity">
+  <div class="w3-container w3-display-center w3-margin-bottom">  
+    <button onclick="window.location.href='https://discord.gg/JKMrqsk';" class="w3-button w3-xlarge w3-theme w3-hover-red" title="AmdFN">Discord Link</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://cdn.discordapp.com/attachments/725060342169993228/725450010828996658/1383797.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+  </div>
+
+<!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://cdn.discordapp.com/attachments/725060342169993228/725450010828996658/1383797.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+  </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 <title>AmdFN</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,33 +9,23 @@
 <link href="styles3.css" type="text/css" rel="stylesheet">
 <body id="myPage">
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  </div>
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Home</a>
+  <a href="#shop" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Shop</a>
+  <a href="#status" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Status</a>
+    <a href="https://discord.gg/hzrFj7c" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Discord</a>
     <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
     </div>
   </div>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
@@ -42,167 +33,84 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#shop" class="w3-bar-item w3-button">Shop</a>
+    <a href="#status" class="w3-bar-item w3-button">Status</a>
+	    <a href="#discord" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Discord</a>
     <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
 </div>
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="1383797.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1000px;margin-top:0px">
 
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+
+  <!-- Image header -->
+    <img src="https://cdn.discordapp.com/attachments/725060342169993228/725450010828996658/1383797.jpg" style="width:100%">
+	<div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+	      <h1 class="w3-jumbo w3-hide-small">AmdFN</h1>
+	        <h1 class="w3-hide-small w3-medium " >Undetected Fortnite Cheat</h1>
+			<h1 class="w3-hide-small w3-medium " >Undetected Kernel Spoofer</h1>
+			<h1 class="w3-hide-small w3-medium " >Undetected Cleaner</h1>
+			<h1 class="w3-hide-small w3-medium " >Cheap prices</h1>
     </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
   </div>
-</div>
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
 
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>OUR TEAM</h2>
-<p>Meet the team:</p>
+<div class="w3-container w3-padding-64 w3-center"> <!--id="team"-->
+<!--h2>OUR TEAM</h2>
+<p> test </p-->
 
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
-  <img src="aaawdawa.jpg" alt="Owner" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Ryzen</h3>
-  <p>Owner</p>
+  <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/26-512.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Clean Design</h3>
+  <p> gay shit here </p>
 </div>
 
 <div class="w3-quarter">
-  <img src="240_F_142101942_PYuQMMpJ9cdewEOU5UOlD4allFOforG3.jpg" alt="Dev" style="width:65%" class="w3-circle w3-hover-opacity">
-  <h3>Optiks</h3>
-  <p>Dev</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Dev" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>TRIX</h3>
-  <p>Dev</p>
+  <img src="https://previews.123rf.com/images/asmati/asmati1610/asmati161000061/63402545-money-bag-sign-illustration-white-icon-on-red-circle-.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Great Price</h3>
+  <p> More dumb shit here </p>
 </div>
 
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>𝕭 𝖑 𝖔 𝖔 𝖉</h3>
-  <p>Admin</p>
-</div>
-
-</div>
-</div>
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h3> penis head</h3>
+  <p>Boss man</p>
 </div>
 
 <div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
+  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3> random shit here </h3>
+  <p>Fixer</p>
 </div>
 
 </div>
 
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
 </div>
 
 <!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p>Choose a pricing plan that fits your needs.</p><br>
+<div class="w3-row-padding w3-center w3-padding-64" id="shop">
+<p><a onclick="window.location.href='https://discord.gg/hzrFj7c';" style="height:41px; width:200px;" class="w3-button w3-display-bottom w3-black w3-padding-Large w3-large w3-hover-red">Discord</a></p>
+    <h2>AmdFN Shop</h2>
+    <p>Choose a Package</p><br>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
+          <p class="w3-xlarge">1 Day</p>
         </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
+        <li class="w3-padding-16"><b>Fortnite Cheat Status</b>
+        <li class="w3-padding-16"><b>BattlEye:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Easy Anti-Cheat:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Note: </b> Some exploits will Result an shorter cheating time</li>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
-        </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-black w3-padding-large w3-hover-red"><i class=""></i> Purchase ($6.00 USD)</button>
         </li>
       </ul>
     </div>
@@ -210,53 +118,53 @@
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
+          <p class="w3-xlarge">1 Week</p>
         </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-          <span class="w3-opacity">per month</span>
+<li class="w3-padding-16"><b>Fortnite Cheat Status</b>
+        <li class="w3-padding-16"><b>BattlEye:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Easy Anti-Cheat:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Note: </b> Some exploits will Result an shorter cheating time</li>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-black w3-padding-large w3-hover-red"><i class=""></i> Purchase ($15.00 USD)</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">1 Month</p>
+        </li>
+<li class="w3-padding-16"><b>Fortnite Cheat Status</b>
+        <li class="w3-padding-16"><b>BattlEye:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Easy Anti-Cheat:</b> Undetected</li>
+        <li class="w3-padding-16"><b>Note: </b> Some exploits will Result an shorter cheating time</li>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large w3-hover-red"><i class=""></i> Purchase ($25.00 USD)</button>
         </li>
       </ul>
     </div>
 </div>
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
+<!-- status of amd -->
+<div class="w3-row w3-center w3-black w3-padding-16" id="status">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">BattlEye</span><br>
+    Undetected
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Easy Anti-Cheat</span><br>
+    Undetected
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Spoofer</span><br>
+    Undetected
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Cleaner</span><br>
+    Undetected
   </div>
 </div>
 
@@ -264,14 +172,17 @@
 <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
@@ -279,6 +190,12 @@
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
 
 <script>
 // Script for side navigation
